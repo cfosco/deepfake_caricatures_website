@@ -1,0 +1,262 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Deepfake Caricatures</title>
+    <meta name="description" content="Website for the Deepfake Caricatures Project">
+    <meta name="author" content="Camilo Fosco">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <span class="title">
+            <a href='#'>
+                <img src="images/caricatures_logo.png" class="in-text" alt="Memento logo">
+                Deepfake Caricatures
+            </a>
+        </span>
+        <div class="links">
+            <a href="#Model">
+                <img src="images/model.png" class="in-text" alt="Model icon">
+                <span>Model</span>
+            </a>
+            <a href="#Paper">
+                <img src="images/paper.svg" class="in-text" alt="Paper icon">
+                <span>Paper</span>
+            </a>
+            <a href="#Code">
+                <img src="images/github.svg" class="in-text" alt="Code icon">
+                <span>Code</span>
+            </a>
+            <a href="#Gallery">
+                <img src="images/gallery.svg" class="in-text" alt="Gallery icon">
+                <span>Gallery</span>
+            </a>
+            <a href="#Team">
+                <img src="images/team.png" class="in-text" alt="Team icon">
+                <span>Team</span>
+            </a>
+        </div>
+    </nav>
+
+    <header id=About>
+        <h1><img src="images/caricatures_logo.png" class="in-text" alt="Memento logo"> Deepfake Caricatures</h1>
+        <h2>Using Artifact Amplification to Expose Doctoring</h2>
+        <p>
+          Deepfakes are posing a serious threat to the integrity of
+        our digital society. Detection techniques are essential to
+        combat the evolving abilities of deepfake generation meth-
+        ods. Crucially, developing tools that allow humans to
+        recognize doctored videos at first glance is key to avoid
+        the spread of misinformation. Here, we introduce a new
+        deepfake detection framework that intelligently distorts fake
+        videos to amplify unnatural deepfake artifacts. Our arti-
+        fact amplification module is semi-supervised by human data
+        and creates interpretable attention maps highlighting arti-
+        facts. These maps improve the performance of our classifier,
+        and allow us to generate <i>Deepfake Caricatures</i>: a transfor-
+        mation of the original deepfake video where artifacts and
+        subtle unnatural movements are amplified to improve hu-
+        man recognition. In short, the contributions of this work
+        are two-fold: we show improved performance on several
+        deepfake detection datasets with a model explicitly attend-
+        ing to artifacts of fake videos, and we provide a pipeline
+        to create our Deepfake Caricatures, a defense mechanism
+        against deepfakes to help people better identify if a video
+        has been doctored. Our approach, based on a mixture of
+        human and artificial supervision, aims to further the devel-
+        opment of countermeasures against fake visual content, and
+        grants humans the ability to make their own judgment when
+        presented with dubious visual media
+        </p>
+
+        <!-- <video src="videos/teaser_vid_final.mp4" muted controls/> -->
+        <div id=Model class="anchor"></div>
+    </header>
+
+
+    <main>
+        <section class="interface">
+            <div class="text">
+                <h2>
+                    <img class="in-text" src="images/dataset.png" alt="Dataset icon">
+                    <span>Framework and Data</span>
+                </h2>
+                <div class="resources" >
+                    <img src="images/human_artifact_maps.png" alt="Human Artifact Maps" style="border-style: dashed;"></img>
+                </div>
+                <p>Our Framework utilises both machine and human supervision to learn to highlight unnatural deepfake artifacts.
+                This has two advantages: it allows us to build better deepfake detectors, and it gives rise to Deepfake Caricatures, a new way of modifying videos to expose doctoring.</p>
+                <div class="links">
+                    <a class="icon-link" href="" target="_blank">
+                        <img src="images/dataset.png" alt="dataset logo">
+                        <div>Download our human annotations</div>
+		    </a>
+                </div>
+            </div>
+            <div id=Code class="anchor"></div>
+        </section>
+
+
+        <section class="interface">
+            <div class="text">
+                <h2>
+                    <img class="in-text" src="images/github.svg" alt="code icon">
+                    <span>Code</span>
+                </h2>
+                <div class="resources">
+                    <img src="images/teaser_model_transparent.png" alt="Deepfake Caricature code Image" style="max-width:55em;"></img>
+                    <p>
+                        Download the code for the Deepfake Caricatures project here.
+                    </p>
+                </div>
+
+                <div class="links">
+                    <a class="icon-link" href="https://github.com/cfosco/deepfake_detection" target="_blank">
+                        <img src="images/github.svg" alt="code icon">
+                        <div>Code</div>
+                    </a>
+                </div>
+            </div>
+            <div id=Paper class="anchor"></div>
+        </section>
+
+
+        <section class="interface">
+            <div class="text">
+                <h2>
+                    <img class="in-text" src="images/paper.svg" alt="Paper icon">
+                    <span>Paper</span>
+                </h2>
+            </div>
+            <div class="other">
+                <img class="thumbnail" src="images/deepfake_caric_paper_image.png" alt="dataset logo">
+            </div>
+            <div class="papers">
+                <ul>
+                    <li>
+                        <div class="paper">
+                            <div class="title">
+                                <span class="authors">Camilo Fosco, Alex Andonian, Allen Lee, Xi Wang, Aude Oliva</span>
+                                <br>
+                                <span class="name">Deepfake Caricatures: Using Artifact Amplification To Expose Doctoring.</span>
+                                <!-- <span class="venue">European Conference on Computer Vision (ECCV), 2020</span> -->
+                            </div>
+                                <!-- <a class="btn arxiv" href="">ArXiv</a> -->
+                                <!-- <a class="btn bibtex" href="">BibTeX</a> -->
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="links">
+              <a class="icon-link" style="margin-right: 30px;"
+                  href="documents/DeepfakeCaricatures_ICCV2021_cameraready.pdf"
+                  target="_blank">
+                  <img src="images/paper.svg" alt="Paper icon">
+                  <div>Read the paper</div>
+              </a>
+
+              <a class="icon-link" style="margin-left: 30px;"
+                  href="documents/DeepfakeCaricatures_ICCV2021__Supplemental.pdf"
+                  target="_blank">
+                  <img src="images/paper.svg" alt="Paper icon">
+                  <div>Read the supplemental</div>
+              </a>
+            </div>
+            <div id=Gallery class="anchor"></div>
+        </section>
+
+
+        <section class="interface">
+            <div class="text">
+                <h2>
+                    <img class="in-text" src="images/gallery.svg" alt="Gallery icon">
+                    <span>Gallery</span>
+                </h2>
+
+                <div class="resources">
+                    <!-- <video src="videos/gallery_demo.mp4" muted autoplay loop alt="DC Gallery"></video> -->
+
+                    <div class="row">
+                        <video src="gallery/grzszchajr.mp4" onmouseover="this.play();" onmouseout="this.pause();" style="height: 256px; width: 256px;"></video>
+
+                        <video src="gallery/ytddugrwph.mp4" onmouseover="this.play();" onmouseout="this.pause();" style="height: 256px; width: 256px;"></video>
+
+                        <video src="gallery/ytddugrwph_cari_Small_gradcam_amp10.mp4" onmouseover="this.play();" onmouseout="this.pause();" style="height: 256px; width: 256px;"></video>
+
+                        <video src="gallery/grzszchajr_cari_real.mp4" onmouseover="this.play();" onmouseout="this.pause();" style="height: 256px; width: 256px;"></video>
+                    </div>
+                      <p style="text-center;"> From right to left: Real Video, Deepfake, Caricature on Fake and Caricature on Real. Hover to play the videos.</p>
+                </div>
+                <!-- </div> -->
+            </div>
+            <div class="links">
+                <a class="icon-link"
+                    href="gallery.html"
+                    target="_blank">
+                    <img src="images/gallery.svg" alt="Gallery icon">
+                    <div>View more Caricature results in our gallery!</div>
+                </a>
+            </div>
+            <div id=Team class="anchor"></div>
+        </section>
+
+
+        <section class="people authors">
+            <h2>Team</h2>
+            <ul>
+                <li class="person">
+                    <a target="_blank" href="https://cfosco.github.io">
+                        <h3>Camilo Fosco*</h3>
+                        <img src="images/Camilo.png" alt="Photo of Camilo Fosco">
+                    </a>
+                        <h5>camilolu@mit.edu</h5>
+                </li>
+                <li class="person">
+                    <a target="_blank" href="https://www.alexandonian.com">
+                        <h3>Alex Andonian*</h3>
+                        <img src="images/Alex2.jpg" alt="Photo of Alex Andonian">
+                    </a>
+                        <h5>andonian@mit.edu</h5>
+                </li>
+                <li class="person">
+                    <a target="_blank" href="https://allenjlee.github.io">
+                        <h3>Allen Lee</h3>
+                        <img src="images/Allen.jpg" alt="Photo of Allen Lee">
+                    </a>
+                        <h5>allenlee@mit.edu</h5>
+                </li>
+                <li class="person">
+                    <a target="_blank" href="">
+                        <h3>Xi Wang</h3>
+                        <img src="images/xi.jpeg" alt="Photo of Xi Wang">
+                    </a>
+                        <h5>nicole.xiwang@gmail.com</h5>
+                </li>
+                <li class="person">
+                    <a target="_blank" href="http://olivalab.mit.edu/">
+                        <h3>Aude Oliva</h3>
+                        <img src="images/Aude.jpg" alt="Photo of Aude Oliva">
+                    </a>
+                        <h5>oliva@mit.edu</h5>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <!-- Block left in case we need it. -->
+    </footer>
+</body>
+
+</html>
