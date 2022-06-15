@@ -373,7 +373,7 @@ section.people.thanks img {
 /* footer styling */
 footer {
   background: var(--theme-dark);
-  color: grey;
+  color: black;
   font-size: 80%;
 }
 
