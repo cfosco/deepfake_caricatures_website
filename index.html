@@ -54,19 +54,12 @@
             artifacts increases deepfake detection by humans and
             machines</h2>
         <p>
-            Deepfakes pose a serious threat to our digital society by fueling the spread of
-            misinformation. It is essential to develop techniques that both detect them, and
-            effectively alert the human user to their presence. Here, we introduce a novel deep-
-            fake detection framework that meets both of these needs. Our approach learns to
-            generate attention maps of video artifacts, semi-supervised on human annotations.
-            These maps make two contributions. First, they improve the accuracy and general-
-            izability of a deepfake classifier, demonstrated across several deepfake detection
-            datasets. Second, they allow us to generate an intuitive signal for the human user,
-            in the form of <i>"Deepfake Caricatures"</i>: transformations of the original deepfake
-            video where attended artifacts are exacerbated to improve human recognition. Our
-            approach, based on a mixture of human and artificial supervision, aims to further
-            the development of countermeasures against fake visual content, and grants humans
-            the ability to make their own judgment when presented with dubious visual media.
+    Deepfakes can fuel online misinformation. As deepfakes get harder to recognize with the naked eye, human users become more reliant on deepfake detection models to help them decide whether a video is real or fake. 
+    Currently, models yield a prediction for a video's authenticity, but do not integrate a method for alerting a human user. We introduce a framework for amplifying artifacts in deepfake videos to make them more detectable by people. 
+    We propose a novel, semi-supervised Artifact Attention module, which is trained on human responses to create attention maps that highlight video artifacts, and magnify them to create a novel visual indicator we call “Deepfake Caricatures”. 
+    In a user study, we demonstrate that Caricatures greatly increase human detection, across video presentation times and user engagement levels. 
+    We also introduce a deepfake detection model that incorporates the Artifact Attention module to increase its accuracy and robustness.
+    Overall, we demonstrate the success of a human-centered approach to designing deepfake mitigation methods.
         </p>
 
         <!-- <video src="videos/teaser_vid_final.mp4" muted controls/> -->
@@ -106,7 +99,7 @@
                 <div class="resources">
                     <img src="images/teaser_model_transparent.png" alt="Deepfake Caricature code Image" style="max-width:55em;"></img>
                     <p>
-                        Download the code for the Deepfake Caricatures project here.
+                        Access the code for the Deepfake Caricatures project here.
                     </p>
                 </div>
 
@@ -129,14 +122,14 @@
                 </h2>
             </div>
             <div class="other">
-                <img class="thumbnail" src="images/arxiv_paper_thumbnail.png" alt="Paper thumbnail">
+                <img class="thumbnail" src="images/2024_arxiv_thumbnail.png" alt="Paper thumbnail">
             </div>
             <div class="papers">
                 <ul>
                     <li>
                         <div class="paper">
                             <div class="title">
-                                <span class="authors">Camilo Fosco*, Emilie Josephs*, Alex Andonian, Allen Lee, Xi Wang, Aude Oliva</span>
+                                <span class="authors">Camilo Fosco*, Emilie Josephs*, Alex Andonian, Aude Oliva</span>
                                 <br>
                                 <span class="name">Deepfake Caricatures: Amplifying attention to artifacts increases deepfake detection by humans and machines</span>
                                 <!-- <span class="venue">European Conference on Computer Vision (ECCV), 2020</span> -->
@@ -151,18 +144,18 @@
 
             <div class="links">
               <a class="icon-link" style="margin-right: 30px;"
-                  href="documents/DeepfakeCaricatures_arxiv.pdf"
+                  href="documents/Deepfake_Caricatures_Neurips_2024_ARXIV.pdf"
                   target="_blank">
                   <img src="images/paper.svg" alt="Paper icon">
                   <div>Read the paper</div>
               </a>
 
-              <!-- <a class="icon-link" style="margin-left: 30px;"
-                  href="documents/DeepfakeCaricatures_CVPR2022___Supplemental.pdf"
+              <a class="icon-link" style="margin-left: 30px;"
+                  href="documents/Deepfake_Caricatures_Neurips_2024_supplemental_ARXIV.pdf"
                   target="_blank">
                   <img src="images/paper.svg" alt="Paper icon">
                   <div>Read the supplemental</div>
-              </a>  TO BE RELEASED ONCE PAPER IS ACCEPTED-->
+              </a> 
             </div>
             <div id=Gallery class="anchor"></div>
         </section>
@@ -187,7 +180,7 @@
 
                         <video src="gallery/grzszchajr_cari_real.mp4" onmouseover="this.play();" onmouseout="this.pause();" style="height: 256px; width: 256px;"></video>
                     </div>
-                      <p style="text-center;"> From right to left: Real Video, Deepfake, Caricature on Fake and Caricature on Real. Hover to play the videos.</p>
+                      <p style="text-center;"> From right to left: Real Video, Deepfake, Caricature on Fake and Caricature on Real. <b>Hover to play the videos.</b></p>
                 </div>
                 <!-- </div> -->
             </div>
@@ -222,12 +215,12 @@
                 </li>
                 <li class="person">
                     <a target="_blank" href="https://www.alexandonian.com">
-                        <h3>Alex Andonian*</h3>
+                        <h3>Alex Andonian</h3>
                         <img src="images/Alex2.jpg" alt="Photo of Alex Andonian">
                     </a>
                         <h5>andonian@mit.edu</h5>
                 </li>
-                <li class="person">
+                <!-- <li class="person">
                     <a target="_blank" href="https://allenjlee.github.io">
                         <h3>Allen Lee</h3>
                         <img src="images/Allen.jpg" alt="Photo of Allen Lee">
@@ -240,7 +233,7 @@
                         <img src="images/xi.jpeg" alt="Photo of Xi Wang">
                     </a>
                         <h5>nicole.xiwang@gmail.com</h5>
-                </li>
+                </li> -->
                 <li class="person">
                     <a target="_blank" href="http://olivalab.mit.edu/">
                         <h3>Aude Oliva</h3>
@@ -252,6 +245,7 @@
         </section>
     </main>
     <footer>
+        * Equal Contribution<br>
         This work was partially funded by an Ignite grant from SystemsThatLearn@CSAIL, and made possible by generous funding from Eric Yuan, CEO and founder of Zoom Video Communications.
     </footer>
 </body>
